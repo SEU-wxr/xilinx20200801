@@ -1,0 +1,929 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul 29 11:34:21 2020
+# Process ID: 96072
+# Current directory: C:/Users/Administrator/Digital_modulation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent49604 C:\Users\Administrator\Digital_modulation\Digital_modulation.xpr
+# Log file: C:/Users/Administrator/Digital_modulation/vivado.log
+# Journal file: C:/Users/Administrator/Digital_modulation\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Digital_modulation/Digital_modulation.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 769.547 ; gain = 168.098
+update_compile_order -fileset sources_1
+close [ open C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v w ]
+add_files C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Jul 29 12:07:47 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Digital_modulation/Digital_modulation.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DAC_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DAC_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digital_modulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/m_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m_ser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/trans_coding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_coding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b57051d9a0234faa8b7aa60d64303af2 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DAC_test_behav xil_defaultlib.DAC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v:38]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'clk_mode' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.m_ser
+Compiling module xil_defaultlib.trans_coding
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.digital_modulation
+Compiling module xil_defaultlib.DAC_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DAC_test_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/xsim.dir/DAC_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jul 29 12:12:07 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 884.969 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DAC_test_behav -key {Behavioral:sim_1:Functional:DAC_test} -tclbatch {DAC_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source DAC_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module DAC_test.test.Driver_DAC1.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DAC_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 892.387 ; gain = 7.418
+run 50 ms
+WARNING: [Simulator 45-29] Cannot open source file /wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v: file does not exist.
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/DAC_test/test/Driver_DAC1/m_seq}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/DAC_test/test/Driver_DAC1/DDS_Addr_Generator/m_seq_trans}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/DAC_test/test/Driver_DAC1/DAC_Data}} 
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DAC_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DAC_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digital_modulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/m_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m_ser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/trans_coding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_coding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b57051d9a0234faa8b7aa60d64303af2 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DAC_test_behav xil_defaultlib.DAC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v:38]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'clk_mode' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.m_ser
+Compiling module xil_defaultlib.trans_coding
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.digital_modulation
+Compiling module xil_defaultlib.DAC_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DAC_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module DAC_test.test.Driver_DAC1.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 900.395 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DAC_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DAC_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digital_modulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/m_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m_ser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/trans_coding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_coding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b57051d9a0234faa8b7aa60d64303af2 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DAC_test_behav xil_defaultlib.DAC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v:38]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'clk_mode' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.m_ser
+Compiling module xil_defaultlib.trans_coding
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.digital_modulation
+Compiling module xil_defaultlib.DAC_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DAC_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DAC_test_behav -key {Behavioral:sim_1:Functional:DAC_test} -tclbatch {DAC_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source DAC_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module DAC_test.test.Driver_DAC1.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DAC_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 900.395 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/DAC_test/test/Driver_DAC1/m_seq}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/DAC_test/test/Driver_DAC1/DDS_Addr_Generator/m_seq_trans}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/DAC_test/test/Driver_DAC1/DAC_Data}} 
+run 50 ms
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:57 . Memory (MB): peak = 900.395 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DAC_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DAC_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digital_modulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/m_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m_ser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/trans_coding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_coding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b57051d9a0234faa8b7aa60d64303af2 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DAC_test_behav xil_defaultlib.DAC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v:38]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'clk_mode' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.m_ser
+Compiling module xil_defaultlib.trans_coding
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.digital_modulation
+Compiling module xil_defaultlib.DAC_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DAC_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DAC_test_behav -key {Behavioral:sim_1:Functional:DAC_test} -tclbatch {DAC_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source DAC_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module DAC_test.test.Driver_DAC1.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DAC_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 900.395 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/DAC_test/test/Driver_DAC1/m_seq}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/DAC_test/test/Driver_DAC1/DDS_Addr_Generator/m_seq_trans}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/DAC_test/test/Driver_DAC1/DAC_Data}} 
+run 100 ms
+run: Time (s): cpu = 00:00:32 ; elapsed = 00:02:55 . Memory (MB): peak = 907.109 ; gain = 6.715
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DAC_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DAC_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digital_modulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/m_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m_ser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/trans_coding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_coding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b57051d9a0234faa8b7aa60d64303af2 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DAC_test_behav xil_defaultlib.DAC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v:38]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'clk_mode' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.m_ser
+Compiling module xil_defaultlib.trans_coding
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.digital_modulation
+Compiling module xil_defaultlib.DAC_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DAC_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DAC_test_behav -key {Behavioral:sim_1:Functional:DAC_test} -tclbatch {DAC_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source DAC_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module DAC_test.test.Driver_DAC1.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DAC_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 907.109 ; gain = 0.000
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/DAC_test/test/Driver_DAC1/m_seq}} 
+current_wave_config {Untitled 4}
+Untitled 4
+add_wave {{/DAC_test/test/Driver_DAC1/DAC_Data}} 
+run 30 ms
+run: Time (s): cpu = 00:00:40 ; elapsed = 00:03:14 . Memory (MB): peak = 907.109 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DAC_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DAC_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digital_modulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/m_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m_ser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/trans_coding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_coding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_test
+ERROR: [VRFC 10-1412] syntax error near end [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v:40]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword end used in incorrect context [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v:40]
+ERROR: [VRFC 10-2865] module 'DAC_test' ignored due to previous errors [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DAC_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DAC_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digital_modulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/m_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m_ser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/trans_coding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_coding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b57051d9a0234faa8b7aa60d64303af2 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DAC_test_behav xil_defaultlib.DAC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v:38]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'clk_mode' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.m_ser
+Compiling module xil_defaultlib.trans_coding
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.digital_modulation
+Compiling module xil_defaultlib.DAC_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DAC_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DAC_test_behav -key {Behavioral:sim_1:Functional:DAC_test} -tclbatch {DAC_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source DAC_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module DAC_test.test.Driver_DAC1.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DAC_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 907.109 ; gain = 0.000
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/DAC_test/test/Driver_DAC1/m_seq}} 
+current_wave_config {Untitled 5}
+Untitled 5
+add_wave {{/DAC_test/test/Driver_DAC1/DAC_Data}} 
+run 30 ms
+run: Time (s): cpu = 00:00:39 ; elapsed = 00:04:13 . Memory (MB): peak = 1092.992 ; gain = 185.883
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DAC_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DAC_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digital_modulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/m_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m_ser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/trans_coding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_coding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b57051d9a0234faa8b7aa60d64303af2 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DAC_test_behav xil_defaultlib.DAC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v:38]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'clk_mode' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.m_ser
+Compiling module xil_defaultlib.trans_coding
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.digital_modulation
+Compiling module xil_defaultlib.DAC_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DAC_test_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1092.992 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DAC_test_behav -key {Behavioral:sim_1:Functional:DAC_test} -tclbatch {DAC_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source DAC_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module DAC_test.test.Driver_DAC1.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DAC_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1092.992 ; gain = 0.000
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/DAC_test/test/Driver_DAC1/m_seq}} 
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/DAC_test/test/Driver_DAC1/DAC_Data}} 
+run 30 ms
+run: Time (s): cpu = 00:00:30 ; elapsed = 00:04:03 . Memory (MB): peak = 1180.836 ; gain = 87.844
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'DAC_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DAC_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digital_modulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/m_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m_ser
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/trans_coding.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans_coding
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sim_1/new/DAC_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b57051d9a0234faa8b7aa60d64303af2 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot DAC_test_behav xil_defaultlib.DAC_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DAC.v:38]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 31 for port 'clk_mode' [C:/Users/Administrator/Digital_modulation/Digital_modulation.srcs/sources_1/new/DDS_Addr_Generator.v:123]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.m_ser
+Compiling module xil_defaultlib.trans_coding
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.digital_modulation
+Compiling module xil_defaultlib.DAC_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DAC_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Digital_modulation/Digital_modulation.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DAC_test_behav -key {Behavioral:sim_1:Functional:DAC_test} -tclbatch {DAC_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source DAC_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module DAC_test.test.Driver_DAC1.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DAC_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1180.836 ; gain = 0.000
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/DAC_test/test/Driver_DAC1/m_seq}} 
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/DAC_test/test/Driver_DAC1/DDS_Addr_Generator/m_seq_trans}} 
+current_wave_config {Untitled 7}
+Untitled 7
+add_wave {{/DAC_test/test/Driver_DAC1/DAC_Data}} 
+run 30 ms
+run: Time (s): cpu = 00:00:38 ; elapsed = 00:04:05 . Memory (MB): peak = 1180.836 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 29 12:43:08 2020...
